@@ -1,0 +1,1 @@
+export const taskStatusLabels = { STARTING: "tasks.starting", RUNNING: "status.running", CANCELLING: "stream.cancelling", COMPLETED: "status.completed", FAILED: "status.failed", CANCELLED: "status.stopped", SKIPPED: "tasks.skipped" } as const;

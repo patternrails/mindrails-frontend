@@ -1,0 +1,5 @@
+saveExact: true
+engineStrict: true
+
+allowBuilds:
+  unrs-resolver@1.12.2: true

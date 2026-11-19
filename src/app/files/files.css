@@ -1,0 +1,26 @@
+.file-viewer { max-width: 1440px; min-height: 100dvh; margin: 0 auto; padding: 24px 32px; color: var(--foreground); }
+.file-viewer-header { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+.file-viewer-header > a { color: var(--foreground); }
+.file-viewer-title { flex: 1; min-width: 180px; }
+.file-viewer-title h1 { margin: 0 0 4px; font-size: 18px; font-weight: 600; overflow-wrap: anywhere; }
+.file-viewer-title p { margin: 0; color: var(--muted); font-size: 12px; }
+.file-toolbar { display: flex; flex-wrap: wrap; gap: 8px; }
+.file-toolbar [aria-pressed="true"] { color: var(--accent); border-color: var(--accent); }
+.file-notice { padding: 10px 14px; margin: 14px 0; background: var(--surface); border-radius: 6px; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.file-status { padding: 48px 0; color: var(--muted); }
+.file-viewer-content { margin-top: 20px; }
+.file-viewer:has(.file-html-frame) { display: flex; flex-direction: column; height: 100dvh; max-width: none; }
+.file-viewer-content:has(.file-html-frame) { flex: 1; display: flex; min-height: 240px; }
+.file-html-frame { width: 100%; border: 1px solid var(--border); border-radius: 8px; background: white; }
+.file-raw { margin: 0; padding: 20px; background: var(--surface); border-radius: 8px; white-space: pre-wrap; overflow-wrap: anywhere; tab-size: 4; font: 13px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.file-markdown { max-width: 960px; margin: 24px auto; overflow-wrap: anywhere; }
+.file-csv { overflow: auto; max-height: 75dvh; border: 1px solid var(--border); border-radius: 6px; }
+.file-csv table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.file-csv caption { padding: 12px; text-align: left; color: var(--muted); }
+.file-csv th, .file-csv td { padding: 10px 14px; border-bottom: 1px solid var(--border); text-align: left; white-space: pre-wrap; min-width: 100px; max-width: 420px; overflow-wrap: anywhere; }
+.file-csv th { position: sticky; top: 0; background: var(--surface); font-weight: 600; }
+@media (max-width: 700px) { .file-viewer { padding: 20px 16px; } .file-viewer-header { gap: 16px; } .file-toolbar { width: 100%; } .file-raw { padding: 14px; } }
+
+.file-image-container { display: flex; align-items: center; justify-content: center; min-height: 240px; padding: 20px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+.file-image-container .authenticated-image { max-width: 100%; }
+.file-image-container img { display: block; max-width: 100%; max-height: 78dvh; object-fit: contain; }

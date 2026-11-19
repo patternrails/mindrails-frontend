@@ -1,0 +1,5 @@
+.file-view-link { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; font-size: 12px; }
+.file-view-link.icon-button { width: auto; padding: 0 6px; }
+.session-file-actions .file-view-link { width: auto; padding: 0 6px; gap: 4px; }
+.file-reference { display: inline-flex; align-items: baseline; gap: 8px; max-width: 100%; }
+.file-reference .file-view-link { color: var(--muted); }

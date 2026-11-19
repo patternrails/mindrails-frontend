@@ -1,0 +1,13 @@
+**
+!Dockerfile
+!.npmrc
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+!next.config.ts
+!postcss.config.mjs
+!tsconfig.json
+!config/
+!config/backend.json
+!src/
+!src/**
